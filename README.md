@@ -38,3 +38,21 @@ The Cloud Agent is modular, and since it runs locally on the host, it offers add
 ## <mark style="color:yellow;">Agent Lifecycle</mark>&#x20;
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+what is zero touch Agent lifecycle ?&#x20;
+
+As per Qualys documentation , Qualys provides zeros touch agent lifecycle which means the lifecycle includes tools for troubleshooting the agents remotely, automating asset record deduplication, stale asset record cleanup and detecting unmanaged devices.&#x20;
+
+## <mark style="color:yellow;">Deployment</mark>&#x20;
+
+I'll be using my Kali Linux based computer for Qualys Agent installation .
+
+**Agent to Platform Communication**&#x20;
+
+* Agent hosts must be able to reach the cloud Agent Server URLs
+* All communication is initiated by the Agent host outbound to Qualys&#x20;
+* TCP port 443 use REST over HTTPS/TLS for communication&#x20;
+* TLS 1.2,SHA-256,  & 2048 bit private key r used&#x20;
+* Communications are encrypted using server certificates with application layer authentication, data security and non repudiation techniques
+* compatible with stateful firewalls , Application firewalls, transparent and non transparent web proxies and NAT gateways&#x20;
+
